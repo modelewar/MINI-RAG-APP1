@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Python Debugger: FastAPI",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "main:app",
+                "--reload",
+                "--app-dir",
+                "${workspaceFolder}/src"
+            ],
+            "jinja": true,
+            "justMyCode": true,
+            "python": "/home/modelewar/miniconda3/envs/mini-rag-app0/bin/python"
+        }
+    ]
+}
