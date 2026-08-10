@@ -3,8 +3,9 @@ from routes import base
 from routes import data
 from motor.motor_asyncio import AsyncIOMotorClient
 from helpers.config import  get_settings
-app = FastAPI()
 
+
+app = FastAPI()
 
 @app.on_event("startup")
 async def startup_db_client():
